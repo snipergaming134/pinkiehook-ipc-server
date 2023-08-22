@@ -1,1 +1,1 @@
-Maintained version of nullworks' cathook-ipc-server
+# rosnehook-ipc-server
