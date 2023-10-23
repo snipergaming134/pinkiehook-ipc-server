@@ -11907,7 +11907,7 @@ class binary_reader
                     string_t& result)
     {
         bool success = true;
-        for (NumberType i = 0; i < len; i++)
+        for (NumberType i = 0; i < len; ++i)
         {
             get();
             if (JSON_HEDLEY_UNLIKELY(!unexpect_eof(format, "string")))
@@ -11940,7 +11940,7 @@ class binary_reader
                     binary_t& result)
     {
         bool success = true;
-        for (NumberType i = 0; i < len; i++)
+        for (NumberType i = 0; i < len; ++i)
         {
             get();
             if (JSON_HEDLEY_UNLIKELY(!unexpect_eof(format, "binary")))
@@ -14293,7 +14293,7 @@ class json_pointer
                             // first char should be between '1' and '9'
                             return false;
                         }
-                        for (std::size_t i = 1; i < reference_token.size(); i++)
+                        for (std::size_t i = 1; i < reference_token.size(); ++i)
                         {
                             if (JSON_HEDLEY_UNLIKELY(!('0' <= reference_token[i] && reference_token[i] <= '9')))
                             {

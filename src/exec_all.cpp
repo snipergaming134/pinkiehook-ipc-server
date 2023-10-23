@@ -28,7 +28,7 @@ int main(int argc, const char** argv)
     if (argc < 1)
         return 1;
 
-    for (int i = 1; i < argc; i++)
+    for (int i = 1; i < argc; ++i)
         cmd += std::string(argv[i]) + " ";
 
     auto peer = std::make_unique<cat_ipc::Peer<server_data_s, user_data_s>>("cathook_followbot_server", false, false);

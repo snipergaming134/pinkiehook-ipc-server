@@ -163,7 +163,7 @@ json query(const json& args)
     }
     else
     {
-        for (unsigned int i = 0; i < cat_ipc::max_peers; i++)
+        for (unsigned int i = 0; i < cat_ipc::max_peers; ++i)
         {
             if (skipEmpty && peer->IsPeerDead(static_cast<int>(i)))
                 continue;

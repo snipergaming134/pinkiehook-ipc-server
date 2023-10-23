@@ -49,7 +49,7 @@ struct user_data_s
 
         int shots;        // TODO
         int hits;        // TODO
-        int headshots;    // TODO
+        int headshots;
 
         int team;
         int role; // class
